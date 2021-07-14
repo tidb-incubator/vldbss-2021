@@ -1,8 +1,8 @@
 ## Introduction
 
-This is the Map-Reduce homework for VLDB Summer School 2021. By completing this task, you will learn some basic skill on Golang language and have some knowledge about distributed systems. This task is similar to the [lab1](https://pdos.csail.mit.edu/6.824/labs/lab-mr.html) of MIT 6.824, a small startup for your study on distributed systems.
+This is the Map-Reduce homework before VLDB Summer School 2021. By completing this task, you will learn some basic skill on Golang language and have some knowledge about distributed systems. This task is similar to the [lab1](https://pdos.csail.mit.edu/6.824/labs/lab-mr.html) of MIT 6.824, a small startup for your study on distributed systems.
 
-There is a uncompleted Map-Reduce framework, you should complete it and use it to extract the 10 most frequent URLs from data files.
+There is an uncompleted Map-Reduce framework, you should complete it and use it to extract the 10 most frequent URLs from data files.
 
 ## Course
 

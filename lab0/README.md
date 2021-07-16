@@ -29,7 +29,6 @@ This lab aims to acquire the skill of Golang development with distributed system
 
 - Fork this repository into your account
 - Complete the lab on your repo
-- Send a pull request to this repo
 
 Ask any questions in AskTUG forum.
 

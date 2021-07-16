@@ -23,13 +23,6 @@ Map-Reduce 是一个著名的分布式计算框架，除了 MIT 6.824，可以�
 
 - https://pdos.csail.mit.edu/6.824/labs/guidance.html
 
-## 向导
-
-这项课程的目标是能够使用 Golang 开发分布式系统。此外，你需要使用 GitHub 来完成课程的流程。
-
-- Fork 本仓库到你的帐号下
-- 在自己的仓库中完成课程
-
 如果有任何问题，可以在 AskTUG 论坛上进行讨论。
 
 - https://asktug.com/tags/vldbss

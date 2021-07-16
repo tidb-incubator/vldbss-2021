@@ -23,13 +23,6 @@ In MIT 6.824's guidance, there are some further advices like debugging in such c
 
 - https://pdos.csail.mit.edu/6.824/labs/guidance.html
 
-## Guide
-
-This lab aims to acquire the skill of Golang development with distributed systems. Further, in this course you need to use GitHub to submit your work.
-
-- Fork this repository into your account
-- Complete the lab on your repo
-
 Ask any questions in AskTUG forum.
 
 - https://asktug.com/tags/vldbss

@@ -1,3 +1,7 @@
+# Map-Reduce Task
+
+[中文版](./README-zh.md)
+
 ## Introduction
 
 This is the Map-Reduce homework before VLDB Summer School 2021. By completing this task, you will learn some basic skill on Golang language and have some knowledge about distributed systems. This task is similar to the [lab1](https://pdos.csail.mit.edu/6.824/labs/lab-mr.html) of MIT 6.824, a small startup for your study on distributed systems.
@@ -18,14 +22,6 @@ For Golang learning, we recommend [Online Go tutorial](https://tour.golang.org/)
 In MIT 6.824's guidance, there are some further advices like debugging in such complex systems. Check it out as your interest.
 
 - https://pdos.csail.mit.edu/6.824/labs/guidance.html
-
-## Guide
-
-This lab aims to acquire the skill of Golang development with distributed systems. Further, in this course you need to use GitHub to submit your work.
-
-- Fork this repository into your account
-- Complete the lab on your repo
-- Send a pull request to this repo
 
 Ask any questions in AskTUG forum.
 
@@ -54,43 +50,6 @@ After filling your code, please use `make test_homework` to test.
 
 All data files will be generated at runtime, and you can use `make cleanup` to clean all test data.
 
-Please output URLs by lexicographical order and ensure that your result has the same format as test data so that you can pass all tests.
+Please output URLs by lexicographical order and ensure that your result has the same format as test data(there is a `result` file) so that you can pass all tests.
 
 Each test cases has **different data distribution** and you should take it into account.
-
-## Requirements and rating principles
-
-* (40%) Performs better than `urltop10_example`.
-* (20%) Pass all test cases.
-* (30%) Have a document to describe your idea and record the process of performance optimization (both the framework and your own code) with `pprof`.
-* (10%) Have a good code style.
-
-NOTE: **go 1.12 is required**
-
-## How to use
-
-Fill your code below comments `YOUR CODE HERE` in `mapreduce.go` to complete this framework.
-
-Implement your own `MapF` and `ReduceF` in `urltop10.go` and use `make test_homework` to test it.
-
-There is a builtin unit test defined in `urltop10_test.go`, however, you still can write your own unit tests.
-
-How to run example:
-```
-make test_example
-```
-
-How to test your implementation:
-```
-make test_homework
-```
-
-How to clean up all test data:
-```
-make cleanup
-```
-
-How to generate test data again:
-```
-make gendata
-```

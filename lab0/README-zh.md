@@ -44,7 +44,7 @@ type MapF func(filename string, contents string) []KeyValue
 
 在完成框架之后，你可以运行 `make test_example` 来运行给出的例子。
 
-再次之后，你需要在 `urltop10.go` 中实现自己的 `MapF` 和 `ReduceF` 并用他们来完成本项课程。
+再此之后，你需要在 `urltop10.go` 中实现自己的 `MapF` 和 `ReduceF` 并用他们来完成本项课程。
 
 在完成之后，使用 `make test_homework` 进行测试。
 

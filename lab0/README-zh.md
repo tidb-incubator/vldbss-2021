@@ -17,7 +17,11 @@
 
 Map-Reduce 是一个著名的分布式计算框架，除了 MIT 6.824，可以参考网上找到的其他资料来帮祝你学习，
 
-对于 Golang 的初学者，我们推荐先通过 [Online Go tutorial](https://tour.golang.org/) 学习语言。
+对于 Golang 的初学者，我们推荐先通过 [Online Go tutorial](https://tour.golang.org/) 学习语言。本实验中需要几项重要的技能：
+
+- 使用 go routine，channel 和 WaitGroup
+- Interface
+- 读写文件
 
 在 MIT 6.824 的课程指南中，还有很多学习建议，例如如何对复杂系统进行 Debug，推荐感兴趣的同学阅读。
 
@@ -29,26 +33,42 @@ Map-Reduce 是一个著名的分布式计算框架，除了 MIT 6.824，可以�
 
 ## 实验介绍
 
-Map-Reduce 的框架代码在 `mapreduce.go` 中。
+### 1. 完成 Map-Reduce 框架
 
-这个框架尚未完成，你需要在 `YOUR CODE HERE` 标记处补充代码。
+#### 要求
 
-map 和 reduce 的函数定义与 MIT 6.824 相同
+Map-Reduce 的框架代码在 `mapreduce.go` 中，但是这个框架尚未完成。
+
+map 和 reduce 的函数定义与 MIT 6.824 相同。
 
 ```go
 type ReduceF func(key string, values []string) string
 type MapF func(filename string, contents string) []KeyValue
 ```
 
-在 `urltop10_example.go` 有一个基于 Map-Reduce 框架实现的例子，能够寻找到 10 个出现频率最高的 URL。
+在 `urltop10_example.go` 有一个基于 Map-Reduce 框架实现的例子，能够寻找到 10 个出现频率最高的 URL。但是因为框架尚未完成，这个例子还没法运行，你需要完成框架，让 `urltop10_example.go` 中的函数正确运行。
 
-在完成框架之后，你可以运行 `make test_example` 来运行给出的例子。
+#### TODO
 
-在此之后，你需要在 `urltop10.go` 中实现自己的 `MapF` 和 `ReduceF` 并用他们来完成本项课程。
+- 在 `mapreduce.go` 的 `YOUR CODE HERE` 标记处补充代码，完成框架。
 
-在完成之后，使用 `make test_homework` 进行测试。
+- 运行 `make test_example` 来测试给出的例子，使其通过测试。
 
-可以使用 `make gendata` 生产测试数据。
+### 2. 基于 Map-Reduce 框架编写 Map-Reduce 函数
+
+#### 要求
+
+在完成 Map-Reduce 的框架并通过测试之后，你需要使用所实现的框架，在 `urltop10.go` 中实现自己的 `MapF` 和 `ReduceF` 来完成本项课程。
+
+#### TODO
+
+- 完成 `urltop10.go` 中的 `URLTop10` 函数，函数逻辑可以参考 `urltop10_example.go` 中的 `ExampleURLTop10`。
+
+- 运行 `make test_homework` 使自己编写的 Map-Reduce 函数通过测试。
+
+### 帮助信息
+
+可以使用 `make gendata` 生成测试数据。
 
 所有的数据文件会在运行过程中被生成，可以使用 `make cleanup` 进行清理。
 

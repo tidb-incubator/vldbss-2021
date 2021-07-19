@@ -27,11 +27,13 @@ Ask any questions in AskTUG forum.
 
 - https://asktug.com/tags/vldbss
 
-## Getting familiar with the source
+## Lab
 
-The simple Map-Reduce framework is defined in `mapreduce.go`.
+### 1. Complete the Map-Reduce framework 
 
-It is uncompleted and you should fill your code below comments `YOUR CODE HERE`.
+#### Requirements
+
+The simple Map-Reduce framework is defined in `mapreduce.go`. However, it's not completed yet.
 
 The map and reduce function are defined as same as MIT 6.824 lab 1.
 
@@ -40,13 +42,27 @@ type ReduceF func(key string, values []string) string
 type MapF func(filename string, contents string) []KeyValue
 ```
 
-There is an example in `urltop10_example.go` which is used to extract the 10 most frequent URLs.
+There is an example in `urltop10_example.go` which is used to extract the 10 most frequent URLs. Since the framework is  uncompleted, the example is not able to run. You need to complete the framework and let the functions in `urltop10_example.go` run correctly.
 
-After completing the framework, you can run this example by `make test_example`.
+#### TODO
 
-And then please implement your own `MapF` and `ReduceF` in `urltop10.go` to accomplish this task.
+- Fill your code in `mapreduce.go` below comments `YOUR CODE HERE`.
 
-After filling your code, please use `make test_homework` to test.
+- Run `make test_example` to test the given example, let it pass the test.
+
+### 2. Write your own Map-Reduce functions based on the framework
+
+#### Requirements
+
+After you have passed tests with your Map-Reduce framework and the example, you need to implement your own `MapF` and `ReduceF` in `urltop10.go` to accomplish this task.
+
+#### TODO
+
+- Complete `URLTop10` function in `urltop10.go`. You can refer to `ExampleURLTop10` in `urltop10_example.go`.
+
+- Run `make test_homework` to let your own Map-Reduce functions pass the tests.
+
+### Helps
 
 All data files will be generated at runtime, and you can use `make cleanup` to clean all test data.
 

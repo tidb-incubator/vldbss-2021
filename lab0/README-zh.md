@@ -29,20 +29,26 @@ Map-Reduce 是一个著名的分布式计算框架，除了 MIT 6.824，可以�
 
 ## 实验介绍
 
-Map-Reduce 的框架代码在 `mapreduce.go` 中。
+### 1. 完成 Map-Reduce 框架
 
-这个框架尚未完成，你需要在 `YOUR CODE HERE` 标记处补充代码。
+Map-Reduce 的框架代码在 `mapreduce.go` 中，但是这个框架尚未完成。
 
-map 和 reduce 的函数定义与 MIT 6.824 相同
+map 和 reduce 的函数定义与 MIT 6.824 相同。
 
 ```go
 type ReduceF func(key string, values []string) string
 type MapF func(filename string, contents string) []KeyValue
 ```
 
-在 `urltop10_example.go` 有一个基于 Map-Reduce 框架实现的例子，能够寻找到 10 个出现频率最高的 URL。
+在 `urltop10_example.go` 有一个基于 Map-Reduce 框架实现的例子，能够寻找到 10 个出现频率最高的 URL。但是因为框架尚未完成，这个例子还没法运行，你需要完成框架，让 `urltop10_example.go` 中的函数正确运行。
 
-在完成框架之后，你可以运行 `make test_example` 来运行给出的例子。
+#### TODO
+
+- 在 `mapreduce.go` 的 `YOUR CODE HERE` 标记处补充代码，完成框架。
+
+- 运行 `make test_example` 来运行给出的例子，使其通过测试。
+
+### 2. 基于 Map-Reduce 框架编写 Map-Reduce 函数
 
 在此之后，你需要在 `urltop10.go` 中实现自己的 `MapF` 和 `ReduceF` 并用他们来完成本项课程。
 

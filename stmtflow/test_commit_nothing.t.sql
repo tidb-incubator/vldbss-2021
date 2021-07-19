@@ -2,7 +2,6 @@
 /* init */ create table t1 (c1 int key, c2 int, c3 int, key k1(c3));
 /* init */ insert into t1 values (1, 1, 1);
 
-/* t1 */ 
 /* t1 */ begin;
 /* t2 */ begin;
 /* t1 */ insert into t1 values(2, 2, 2);

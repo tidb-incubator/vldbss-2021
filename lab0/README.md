@@ -17,7 +17,11 @@ We recommend the introduction chapter of MIT 6.824's course for this lab. This v
 
 Map-Reduce is a well-known distributed computation framework, you may find other videos and blogs online.
 
-For Golang learning, we recommend [Online Go tutorial](https://tour.golang.org/). If you are new to this language, it would be a good idea to finish the tutorial course before starting this lab.
+For Golang learning, we recommend [Online Go tutorial](https://tour.golang.org/). If you are new to this language, it would be a good idea to finish the tutorial course before starting this lab. In this lab, there are some important skills:
+
+- The usage of go routine, channel and WaitGroup 
+- Interface
+- Read/write file
 
 In MIT 6.824's guidance, there are some further advices like debugging in such complex systems. Check it out as your interest.
 
@@ -42,7 +46,7 @@ type ReduceF func(key string, values []string) string
 type MapF func(filename string, contents string) []KeyValue
 ```
 
-There is an example in `urltop10_example.go` which is used to extract the 10 most frequent URLs. Since the framework is  uncompleted, the example is not able to run. You need to complete the framework and let the functions in `urltop10_example.go` run correctly.
+There is an example in `urltop10_example.go` which is used to extract the 10 most frequent URLs. Since the framework is uncompleted, the example is not able to run. You need to complete the framework and let the functions in `urltop10_example.go` run correctly.
 
 #### TODO
 

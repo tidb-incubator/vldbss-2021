@@ -17,7 +17,11 @@
 
 Map-Reduce 是一个著名的分布式计算框架，除了 MIT 6.824，可以参考网上找到的其他资料来帮祝你学习，
 
-对于 Golang 的初学者，我们推荐先通过 [Online Go tutorial](https://tour.golang.org/) 学习语言。
+对于 Golang 的初学者，我们推荐先通过 [Online Go tutorial](https://tour.golang.org/) 学习语言。本实验中需要几项重要的技能：
+
+- 使用 go routine，channel 和 WaitGroup
+- Interface
+- 读写文件
 
 在 MIT 6.824 的课程指南中，还有很多学习建议，例如如何对复杂系统进行 Debug，推荐感兴趣的同学阅读。
 

@@ -60,4 +60,4 @@ After you've done with all the tasks above, you need to submit your homework by 
 
 - Write your report follow [report.md](./report.md). Note you may not edit this template or add further contents. Your report should be concise and clear. 
 - Package your code and send it with PDF report to vldbss.2021@pingcap.com.
-- Mail title should be "College-Name Lab0 Homework"
+- Mail title should be "College-Name Lab0 Homework".

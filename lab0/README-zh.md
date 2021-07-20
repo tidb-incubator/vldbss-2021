@@ -62,4 +62,4 @@ type MapF func(filename string, contents string) []KeyValue
 
 - 使用 [report.md](./report.md) 模板撰写报告，请勿修改模板或增加额外内容，尽量简洁精炼。
 - 将代码打包，和 PDF 报告一起发送到 vldbss.2021@pingcap.com。
-- 邮件标题格式为 “学校-姓名 lab0 作业”
+- 邮件标题格式为 “学校-姓名 lab0 作业”。

@@ -21,7 +21,7 @@ After the build process, there will be a `stmtflow` binary in the `bin` director
 /* init */ create table test (id int primary key, value int);
 /* init */ insert into test (id, value) values (1, 10), (2, 20);
 
-/* t1:wait */ begin;
+/* t1 */ begin;
 /* t2 */ begin;
 /* t1 */ delete from test where id = 1;
 /* t2 */ select * from test where id = 1;

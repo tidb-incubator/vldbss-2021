@@ -4,8 +4,7 @@
 ## Introduction
 
 The `stmtflow` test [tool](https://github.com/zyguan/tidb-test-util) is used to run a suite of **sql tests** on the tinysql/tinykv cluster **concurrently**. 
-In the summer schoolproject, we could use this tool to write specific test cases with multiple connections or sessions to test the concurrency results of our
-transaction engine.
+In the summer school project, we could use this tool to write specific test cases with multiple connections or sessions to test the concurrency results of our transaction engine.
 
 
 ## How to use it

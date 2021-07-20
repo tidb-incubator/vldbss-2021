@@ -46,7 +46,7 @@ The expected ouput of this case is
 -- init >> 0 rows affected
 /* init */ insert into test (id, value) values (1, 10), (2, 20);
 -- init >> 2 rows affected
-/* t1:wait */ begin;
+/* t1 */ begin;
 -- t1 >> 0 rows affected
 /* t2 */ begin;
 -- t2 >> 0 rows affected

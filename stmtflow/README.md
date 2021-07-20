@@ -15,7 +15,7 @@ cd tidb-test-util
 make build
 ```
 
-After the build process, there will be a `stmtflow` binary under in `bin` directory. Then we could write some test cases, for example the test logic like.
+After the build process, there will be a `stmtflow` binary in the `bin` directory. Then we could write some test cases, for example the test logic like.
 ```
 /* init */ drop table if exists test;
 /* init */ create table test (id int primary key, value int);

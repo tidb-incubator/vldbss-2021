@@ -10,7 +10,7 @@ In the summer school project, we could use this tool to write specific test case
 ## How to use it
 
 ```
-https://github.com/zyguan/tidb-test-util.git
+git clone https://github.com/zyguan/tidb-test-util.git
 cd tidb-test-util
 make build
 ```

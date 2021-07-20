@@ -53,3 +53,11 @@ All data files will be generated at runtime, and you can use `make cleanup` to c
 Please output URLs by lexicographical order and ensure that your result has the same format as test data(there is a `result` file) so that you can pass all tests.
 
 Each test cases has **different data distribution** and you should take it into account.
+
+### Submit Your Work
+
+After you've done with all the tasks above, you need to submit your homework by email.
+
+- Write your report follow [report.md](./report.md). Note you may not edit this template or add further contents. Your report should be concise and clear. 
+- Package your code and send it with PDF report to vldbss.2021@pingcap.com.
+- Mail title should be "College-Name Lab0 Homework"
